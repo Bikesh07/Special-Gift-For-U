@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Happy Birthday, My Beautiful Love 💗</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain"></div>
+<div class="petals" id="petals"></div>
+
+<header class="nav">
+  <div class="brand">♡</div>
+  <nav>
+    <a href="#home">HOME</a><a href="#letter">LETTER</a><a href="#moments">MOMENTS</a>
+    <a href="#why">WHY YOU</a><a href="#celebrate">CELEBRATE</a>
+  </nav>
+  <button class="sound" id="sound" type="button">● <span>Starting music…</span></button>
+  <!-- Music is controlled by the parent login page to preserve the user gesture. -->
+</header>
+
+<main>
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="tiny">✦ TODAY IS A VERY SPECIAL DAY ✦</div>
+      <h1>Happy<br><strong>Birthday Menka</strong></h1>
+      <div class="love-title">My Beautiful Love <i>✿</i></div>
+      <p class="tagline">You light up every room you enter.</p>
+      <button class="surprise" id="surprise">✦ OPEN YOUR SURPRISE <span>→</span></button>
+    </div>
+    <div class="hero-flower flower-a">✿</div><div class="hero-flower flower-b">✿</div>
+    <div class="doodle d1">♡</div><div class="doodle d2">✦</div>
+  </section>
+
+  <div class="ribbon">
+    <a href="#home">Happy Birthday</a><a href="#letter">For You, Love</a><a href="#moments">Sweet Moments</a>
+    <a href="#why">Why You're Special</a><a href="#celebrate">Dreams Come True</a><a href="#final">Forever & Always</a>
+  </div>
+
+  <section class="intro section" id="letter">
+    <div class="label">01 · A SECRET MESSAGE</div>
+    <div class="secret-layout">
+      <div>
+        <p class="script">To the one who makes my world brighter…</p>
+        <h2>Some feelings are<br><span>too beautiful</span> for ordinary words.</h2>
+        <p class="body-copy">There are not enough words in any language to express how much you mean to me. You are the morning I look forward to, the evening I treasure, and every beautiful moment in between.</p>
+        <button class="text-btn" id="readLetter">Read my secret message ↗</button>
+      </div>
+      <div class="letter-envelope">
+        <div class="envelope-top"></div><div class="letter-paper">
+        <span>♡</span><small>for my favourite person</small>
+      </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="moments section" id="moments">
+    <div class="label">02 · OUR LITTLE UNIVERSE</div>
+    <h2 class="section-title">The moments that<br><span>make us smile.</span></h2>
+    <p class="center-copy">Swipe, tap the arrows, or let the memories drift by… ♡</p>
+    <div class="memory-slider-shell">
+      <div class="slider-glow" aria-hidden="true"></div>
+      <div class="slider-topline">
+        <span class="slider-kicker">OUR MEMORIES</span>
+        <span class="slider-live"><i></i> DREAMING OF US</span>
+      </div>
+      <div class="memory-orbit" aria-label="Photo memories carousel">
+
+        <article class="memory m1"
+                 data-msg="A moment I wish I could replay forever. ♡">
+          <div class="photo p1">
+            <img src="01.jpeg" alt="Memory 1">
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="memory m2"
+                 data-msg="This smile deserves its own little frame. ✿">
+          <div class="photo p2">
+            <img src="02.jpeg" alt="Memory 2">
+          </div>
+          <span>♡</span>
+        </article>
+
+        <!-- 5th photo in CENTER -->
+        <article class="memory center-memory"
+                 data-msg="My favourite memories always have you in them. 💗">
+          <div class="photo p3">
+            <img src="06.jpeg" alt="Memory 5">
+          </div>
+          <span>♡</span>
+        </article>
+        <!-- 5th photo in CENTER -->
+        <article class="memory center-memory"
+                 data-msg="My favourite memories always have you in them. 💗">
+          <div class="photo p3">
+            <img src="05.jpeg" alt="Memory 5">
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="memory m3"
+                 data-msg="One more memory to keep close to my heart.">
+          <div class="photo p4">
+            <img src="03.jpeg" alt="Memory 3">
+          </div>
+          <span>♡</span>
+        </article>
+
+        <article class="memory m4"
+                 data-msg="And somehow, every little moment becomes special.">
+          <div class="photo p5">
+            <img src="04.jpeg" alt="Memory 4">
+          </div>
+          <span>♡</span>
+        </article>
+
+      </div>
+      <div class="slider-bottom">
+        <div class="photo-progress"><span id="photoProgress"></span></div>
+        <div class="photo-controls">
+          <button id="prevPhoto" class="photo-btn" aria-label="Previous photo">‹</button>
+          <div class="counter-wrap">
+            <span id="photoCounter">01 / 05</span>
+            <span class="counter-label">MEMORY</span>
+          </div>
+          <button id="nextPhoto" class="photo-btn" aria-label="Next photo">›</button>
+        </div>
+        <div class="slider-dots" id="sliderDots" aria-label="Choose a memory"></div>
+      </div>
+      <div class="memory-message" id="memoryMessage">Tap a memory ♡</div>
+    </div>
+  </section>
+
+  <section class="why section" id="why">
+    <div class="label">03 · WHY YOU</div>
+    <p class="script center">just a few of the million reasons…</p>
+    <h2 class="section-title center-title">I choose you,<br><span>every single time.</span></h2>
+    <div class="reasons">
+      <div><b>01</b><h3>Your smile</h3><p>My favourite little piece of sunshine.</p></div>
+      <div><b>02</b><h3>Your heart</h3><p>Kind, warm, and full of beautiful things.</p></div>
+      <div><b>03</b><h3>Your strength</h3><p>You inspire me more than you know.</p></div>
+      <div><b>04</b><h3>Simply you</h3><p>No explanation needed. You are enough.</p></div>
+    </div>
+  </section>
+
+  <section class="quote-section">
+    <div class="quote-mark">“</div>
+    <p>On your birthday, I want you to know how deeply you are loved. Your smile is my favourite sight, and your happiness is my greatest treasure.</p>
+    <div class="quote-line"></div><small>Here is to another year of beautiful memories.</small>
+  </section>
+
+  <section class="celebrate section" id="celebrate">
+    <div class="label">04 · MAKE A WISH</div>
+    <div class="cake">
+      <div class="flame"></div><div class="candle"></div>
+      <div class="icing"><i></i><i></i><i></i></div>
+      <div class="cake-layer top-layer"></div><div class="cake-layer bottom-layer"></div><div class="plate"></div>
+    </div>
+    <p class="script center">close your eyes & make a wish</p>
+    <h2 class="section-title center-title">May this be the year<br><span>everything feels possible.</span></h2>
+    <button class="surprise" id="wish">MAKE A WISH ✨</button>
+  </section>
+
+  <section class="final section" id="final">
+    <div class="final-flower">✿</div>
+    <div class="label">05 · FROM MY HEART</div>
+    <h2>My favourite gift<br>from the universe<br><span>is you.</span></h2>
+    <p>Happy Birthday, my love.<br>May your days be soft, your dreams be big,<br>and your smile stay forever bright.</p>
+    <div class="signature">with all my heart ♡</div>
+    <button class="back" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑ back to the beginning</button>
+  </section>
+</main>
+
+<div class="modal" id="modal">
+  <div class="modal-card">
+    <button class="close" id="close">×</button>
+    <div class="gift">🎁</div>
+    <p class="script">A Secret Message…</p>
+    <p>There are not enough words in any language to express how much you mean to me. You are the morning I look forward to, the evening I treasure, and every beautiful moment in between.</p>
+    <strong>Happy Birthday, my love.</strong>
+    <p>May this year be the most beautiful chapter of your story yet. You are loved beyond measure — today, tomorrow, and every single day after.</p>
+    <div class="emojis">🌸 🌙 ✨ 🌷 💗</div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
